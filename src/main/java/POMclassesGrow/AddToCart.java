@@ -11,6 +11,7 @@ import UtilClasses.Utilcass1;
 public class AddToCart {
 	
 	WebDriver driver;
+
 @FindBy(xpath = "//span[@class='absolute-center cartNum32']")
 private WebElement Cartsymbl;
 
@@ -32,7 +33,7 @@ private WebElement AddToCartBTN;
 
 public AddToCart(WebDriver driver) {
 	PageFactory.initElements(driver, this);
-	this.driver = driver;
+	driver=this.driver;
 	}
 
 public void ClickOnCartSymbol() {
